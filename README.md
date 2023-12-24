@@ -27,3 +27,11 @@ This is a small project where you can train multiple models in a single line and
 
 ## Metrics
 1. R2 Score for regression
+
+# Sample Code
+```python
+from easy_ml.models import regression
+reg = regression(X_train,y_train,X_train,y_test)
+result = reg.result() # returns the pandas dataframe
+model = reg.get_best() 
+```
