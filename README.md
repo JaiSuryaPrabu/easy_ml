@@ -17,13 +17,28 @@ This is a small project where you can train multiple models in a single line and
 4. Ensemble
     1. RandomForestRegressor
 ## 2. Classification
-~ On the way ~
+1. Linear Models:
+    1. Logistic Regression
+2. Support Vector Machine 
+    1. SVC
+3. Decision Tree 
+    1. DecisionTreeClassifier
+4. Random Forest
+    1. RandomForestClassifier
+5. K Neighbors
+    1. KNeighborsClassifier
+6. Naive Bayes
+    1. GaussianNB
+    2. BernoulliNB
+    3. MultinomialNB
 ## 3. Clustering
 ~ On the way ~
 ## 4. Data Preprocessing
 ~ On the way ~
 ## 5. Upload to PyPi
 ~ On the way ~
+## 6. Visualization
+*Loss and Accuracy Graph*
 
 ## Metrics
 1. R2 Score for regression
