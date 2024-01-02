@@ -4,7 +4,7 @@ This is a small project where you can train multiple models in a single line and
 **easy_ml** is under development and this project is open to contributions from anyone 🤗 
 
 # Roadmap
-## 1. Regression
+## 1. Regression 🟢
 1. Linear Models:
     1. Linear Regression - For simple and multiple linear regression
     2. Ridge
@@ -16,7 +16,7 @@ This is a small project where you can train multiple models in a single line and
     1. DecisionTreeRegressor
 4. Ensemble
     1. RandomForestRegressor
-## 2. Classification
+## 2. Classification 🟢
 1. Linear Models:
     1. Logistic Regression
 2. Support Vector Machine 
@@ -31,22 +31,31 @@ This is a small project where you can train multiple models in a single line and
     1. GaussianNB
     2. BernoulliNB
     3. MultinomialNB
-## 3. Clustering
+## 3. Clustering 🔴
 ~ On the way ~
-## 4. Data Preprocessing
+## 4. Data Preprocessing 🟠
 ~ On the way ~
-## 5. Upload to PyPi
+## 5. Upload to PyPi 🔴
 ~ On the way ~
-## 6. Visualization
+## 6. Visualization 🔴
 *Loss and Accuracy Graph*
 
 ## Metrics
-1. R2 Score for regression
+1. `R2 Score` - Regression
+2. `Accuracy Score` - Classification
 
 # Sample Code
+1. Regression
 ```python
 from easy_ml.models import regression
 reg = regression(X_train,y_train,X_train,y_test)
 result = reg.result() # returns the pandas dataframe
 model = reg.get_best() 
+```
+2. Classification
+```python
+from easy_ml.models import classification
+clas = classification(X_train,y_train,X_train,y_test)
+results = clas.result()
+model = clas.get_best()
 ```
